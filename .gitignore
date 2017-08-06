@@ -1,0 +1,42 @@
+
+
+# python
+# cPicled data
+*.pkl
+
+# gzipped data
+*.gz
+
+# compiled python
+*.pyc
+
+# results
+*.res
+
+# txt
+*.txt
+
+$ pdf
+*.pdf
+
+# data
+*.train
+*.dev
+*.test
+
+# numpy
+*.npy
+
+# model
+*.model
+
+# folders
+sup_results/*
+unsup_results/*
+semi_results/*
+WSJ_POS_rawdata/*
+twitter_POS_rawdata/*
+UD_POS_rawdata/*
+daily547_POS_rawdata/*
+simple_decoder_debug/*
+UD_glove-English_semi_results/*
