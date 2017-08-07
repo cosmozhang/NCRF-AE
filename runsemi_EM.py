@@ -13,7 +13,6 @@ import argparse
 def run(parsed_args):
 
     lfilename = parsed_args.labeled_set
-    ufilename = parsed_args.unlabeled_set
     per_labeled = parsed_args.percent_labeled
     per_unlabeled = parsed_args.percent_unlabeled
     em_weight_unlabeled = parsed_args.em_weight_unlabeled
@@ -204,7 +203,6 @@ if __name__ == '__main__':
     argparser = argparse.ArgumentParser()
 
     argparser.add_argument("--labeled_set", type=str, help="The labeled dataset")
-    argparser.add_argument("--unlabeled_set", type=str, default=None, help="The labeled dataset")
     argparser.add_argument("--percent_labeled", type=int, default=50, help="Percentage of labeled data")
     argparser.add_argument("--percent_unlabeled", type=int, default=50, help="Percentage of unlabeled data")
     argparser.add_argument("--em_weight_unlabeled", type=float, default=1.00, help="weight for unlabled data in EM")
